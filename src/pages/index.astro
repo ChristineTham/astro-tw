@@ -4,11 +4,11 @@ import { getCollection } from 'astro:content'
 const blogEntries = await getCollection('blog')
 ---
 
-<Layout title="Welcome to Astro Base">
-  <main class="font-sans prose">
+<Layout title="Welcome to Astro TW">
+  <main class="prose font-sans">
     <div class="i-logos-astro h-24 w-48"></div>
-    <h1>Welcome to Astro Base</h1>
-    <p>This is a minimal Astro starter with Typescript, UnoCSS and Iconify.</p>
+    <h1>Welcome to Astro TW</h1>
+    <p>This is a minimal Astro starter with Typescript and TailwindCSS.</p>
     <ul>
       {
         blogEntries.map((post) => (
